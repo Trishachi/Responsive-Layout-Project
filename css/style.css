@@ -1,0 +1,267 @@
+﻿/*************************************
+Styles for Responsive Layout Project
+Author - Chisombili Patricia Okoye (Trisha)
+Copyright 2017
+
+**************************************/
+
+
+/*--------------------------------------------------
+Global Styles
+--------------------------------------------------*/
+
+
+* {
+	box-sizing: border-box;
+	text-align: center;
+}
+
+
+body {
+  	font-family: 'lato', sans-serif;
+ 	color: #3d4c3d;  	
+  	font-size: 1em;
+  	background: #c3c3c3;
+}
+
+h1, h2 {
+	font-family: 'Artifika', sans-serif;
+	-webkit-font-smoothing: antialiased;
+	color: #333;
+	padding: 20px 0;	
+}
+
+h2 {
+	text-transform: uppercase;
+}
+
+ul, li {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	width: 100%;
+	margin: 10px 0;
+	border-radius: 6px;
+}
+
+
+
+/* Layout Styles */
+
+.wrapper {
+	width: calc(100% - 30px);
+	max-width: 1224px;
+	margin: auto;
+	padding-right: 1em;
+	padding-left: 1em;
+}
+
+.clearfix {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+header {
+	width: 100%;
+	}
+
+section {
+    padding: 20px 0px 50px;
+}
+
+footer {
+	width: 100%;
+	border-top: 1px solid #666;
+	padding: 30px 0;
+	font-size: 0.75em;
+}
+
+/* Header/Navigation Styles */
+
+header h1 {
+	font-size: 1.5em;
+	padding: 5px 0;
+}
+
+nav a {
+	display: block;
+	background: #fff;
+	margin-bottom: 5px;
+	padding: 10px;
+}
+
+nav a:hover {
+	background: #c3c3c3;
+}
+
+nav a, footer a {
+	text-transform: uppercase;
+	text-decoration: none;
+	font-weight: bold;
+	color: #3d4c3d;
+}
+
+/* Section Styles */
+
+#about p,
+#contact p {
+font-size: 1.15rem;
+}
+
+#about img {
+    box-shadow: 0 0 5px #555;
+}
+
+#portfolio {
+	background: #fff;
+}
+
+#portfolio p {
+	max-width: 70%;
+	margin: auto;
+}
+
+.portfolio-item {
+	float: left;
+	width: 100%;
+	margin: 20px 0px;
+}
+
+#contact p {
+    max-width: 450px;
+    margin: auto;
+}
+
+/* Footer Styles */
+
+.footer-nav {
+	display: none;
+}
+
+.footer-name,
+.footer-nav-small {
+	float: right;
+}
+
+.footer-name {
+	font-weight: bold;
+	font-size: 1.2em;
+	color: #333;
+	float: left;
+}
+
+/* Styles for larger screens */
+
+@media screen and ( min-width: 768px ) {
+	
+	.wrapper {
+		width: 90%;
+	}
+		
+	header h1 {
+		margin-bottom: 20px;
+	}
+	
+	nav a {
+		display: inline;
+		background: none;
+		width: auto;
+		padding: 10px 0;
+	}
+	
+	nav li {
+	display: inline-block;
+	margin-left: 40px;
+	}
+	
+	nav li:first-child {
+	margin-left: 0;
+	}
+	
+	#about {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
+	}
+	
+	#about img {
+	width: 320px;
+	height: 100%;
+	}
+	
+	#about p {
+    max-width: 404px;
+    text-align: left;
+    font-size: 1.25em;
+    margin: 40px 25px 0 0;
+	}
+	
+	.portfolio-item {
+		max-width: 45%;
+    	margin: 16px;
+    	margin-bottom: 60px;
+     }
+    
+    #portfolio p {
+	max-width: 80%;
+	}
+
+	.portfolio-item:nth-child(2n+2) {
+		clear: left;
+	}
+	
+	.footer-nav {
+	display: inline;
+	}
+	
+	.footer-nav nav {
+	float: right;
+	}
+	
+	.footer-nav-small {
+		display: none;
+	}
+
+}
+
+
+@media screen and ( min-width: 1024px ) {
+	
+	header h1 {
+	float: left;
+	}
+	
+	header nav {
+	float: right;
+	margin-top: 20px;
+	}
+	
+	#about p {
+    max-width: 70%;
+	}
+	
+	.portfolio-item:nth-child(2n+2) {
+	clear: none;
+	}
+	
+	.portfolio-item {
+	max-width: 20%;
+	margin-left: 3%;
+	}
+	
+	#portfolio p{
+		max-width: 90%;
+	 	
+ 	}
+
+}
+
+
